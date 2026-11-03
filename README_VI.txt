@@ -32,4 +32,4 @@ KIỂM TRA
 NÂNG CẤP ĐỂ CÓ PUSH NỀN
 Cần một backend chạy lịch định kỳ, lưu trạng thái bài mới, đánh giá nguồn, và gửi Web Push qua VAPID tới subscription của trình duyệt. Có thể thử gói miễn phí của một nhà cung cấp, nhưng hạn mức và điều kiện thay đổi; không thể cam kết miễn phí hoặc 24/7 vĩnh viễn. Không nên triển khai push tự động báo động đỏ từ từ khóa.
 
-BẢN SỬA GIỚI HẠN TỐC ĐỘ (04/11/2026): giãn mỗi truy vấn GDELT cách nhau 5,5 giây và thử lại tối đa 3 lần (cách nhau 6 giây) khi bị lỗi, để tránh lỗi Failed to fetch khi tải trang hoặc bấm Cập nhật tin.
+BẢN SỬA GIỚI HẠN TỐC ĐỘ (04/11/2026): mỗi lần cập nhật giãn ra 5 phút (các truy vấn cách nhau 2,5 phút) và thử lại tối đa 3 lần (cách nhau 6 giây) khi bị lỗi, để tránh lỗi Failed to fetch khi tải trang hoặc bấm Cập nhật tin.
